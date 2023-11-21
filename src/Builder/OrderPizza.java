@@ -11,5 +11,13 @@ public class OrderPizza {
 
         Pizza margheritaPizza = client.getPizza();
         System.out.println(margheritaPizza);
+        System.out.println();
+
+        PizzaBuilder capri = new CapriPizzaBuilder();
+        client.setPizzaBuilder(capri);
+        client.constructPizza();
+
+        Pizza capriPizza = client.getPizza();
+        System.out.println(capriPizza);
     }
 }
